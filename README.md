@@ -84,7 +84,11 @@ Si tienes problemas para conectar a MongoDB, sigue estos pasos:
     ```bash
     mongo --host localhost --port 27017
     ```
+**Ejecutar `mongod` con `--dbpath`:** Este es el paso crucial para iniciar el servidor y especificar la ruta de los datos. **Si no se especifica `--dbpath`, MongoDB intentará usar una ruta por defecto que podría no existir, generando errores.**
 
+   ```bash
+   .\mongod.exe --dbpath="C:\data\db"
+ ```
 3. **Verificar la ruta de MongoDB:** Asegúrate de que la ruta al directorio `bin` de MongoDB esté correctamente añadida al PATH del sistema.
 
 4. **MongoDB Compass:**
